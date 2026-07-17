@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pymysql
+python-dotenv
+passlib[bcrypt]
+requests
+python-multipart
