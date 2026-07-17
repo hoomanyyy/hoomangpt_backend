@@ -46,7 +46,8 @@ app.add_middleware(
     CORSMiddleware,
 
     allow_origins=[
-        "http://localhost:5173"
+        "http://localhost:5173",
+        "https://hoomangpt.pages.dev"
     ],
 
     allow_credentials=True,
@@ -55,7 +56,6 @@ app.add_middleware(
 
     allow_headers=["*"],
 )
-
 
 
 
@@ -368,17 +368,15 @@ def create_payment(data:dict):
 
 
         "success_url":
-        "http://localhost:5173/dashboard",
-
-
+        "https://hoomangpt.pages.dev/dashboard",
 
         "cancel_url":
-        "http://localhost:5173/billing",
+        "https://hoomangpt.pages.dev/billing",
 
 
 
         "ipn_callback_url":
-        "https://YOUR-NGROK-URL.ngrok-free.app/api/payment-webhook"
+        "https://hoomangpt-backend.onrender.com/api/payment-webhook"
 
 
 
